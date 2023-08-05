@@ -57,23 +57,22 @@ def main():
     # &direction=barbershopi\
     # &isMaster=0")
 
+    # посилання сформоване з "home-categories"
     # url = "https://app.mybeauty.ua/api/v1/salon/nearest?\
     # perPage=10\
-    # &page=2\
-    # &latitude=50.448125\
-    # &longitude=30.522332\
-    # &searchText=%D0%91%D0%B0%D1%80%D0%B1%D0%B5%D1%80%D1%88%D0%BE%D0%BF%D0%B8\
-    # &address=%D0%9A%D0%B8%D1%97%D0%B2"
+    # &page=1\
+    # &latitude=50.4501\
+    # &longitude=30.5234\
+    # &direction=fe347320-9080-40ec-9b66-4a6cf4994299\
+    # &address=%D0%9A%D0%B8%D1%97%D0%B2,%20Ukraine"
 
+    # посилання сформоване з "footer__main--nav"
     url = "https://app.mybeauty.ua/api/v1/salon/nearest?\
     page=1\
     &perPage=10\
-    &city=dnipro\
-    &direction=barbershopi\
+    &city=kiev\
+    &direction=makiyazh\
     &isMaster=0"
-
-    "https://app.mybeauty.ua/api/v1/salon/nearest?page=1&perPage=10&city=dnipro&direction=barbershopi&isMaster=0"
-    "https://app.mybeauty.ua/api/v1/salon/nearest?page=1&perPage=10&city=kiev&direction=makiyazh&isMaster=0"
 
     get_json(url)
     get_collect(url)
