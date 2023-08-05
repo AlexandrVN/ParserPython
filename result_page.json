@@ -1,0 +1,120 @@
+{
+    "type": "https://tools.ietf.org/html/rfc2616#section-10",
+    "title": "An error occurred",
+    "detail": "City is not found by slug or id",
+    "trace": [
+        {
+            "namespace": "",
+            "short_class": "",
+            "class": "",
+            "type": "",
+            "function": "",
+            "file": "/var/www/src/Action/Salon/SalonNearestController.php",
+            "line": 65,
+            "args": []
+        },
+        {
+            "namespace": "App\\Action\\Salon",
+            "short_class": "SalonNearestController",
+            "class": "App\\Action\\Salon\\SalonNearestController",
+            "type": "->",
+            "function": "__invoke",
+            "file": "/var/www/vendor/symfony/http-kernel/HttpKernel.php",
+            "line": 152,
+            "args": [
+                [
+                    "object",
+                    "Symfony\\Component\\HttpFoundation\\Request"
+                ]
+            ]
+        },
+        {
+            "namespace": "Symfony\\Component\\HttpKernel",
+            "short_class": "HttpKernel",
+            "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+            "type": "->",
+            "function": "handleRaw",
+            "file": "/var/www/vendor/symfony/http-kernel/HttpKernel.php",
+            "line": 74,
+            "args": [
+                [
+                    "object",
+                    "Symfony\\Component\\HttpFoundation\\Request"
+                ],
+                [
+                    "integer",
+                    1
+                ]
+            ]
+        },
+        {
+            "namespace": "Symfony\\Component\\HttpKernel",
+            "short_class": "HttpKernel",
+            "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+            "type": "->",
+            "function": "handle",
+            "file": "/var/www/vendor/symfony/http-kernel/Kernel.php",
+            "line": 202,
+            "args": [
+                [
+                    "object",
+                    "Symfony\\Component\\HttpFoundation\\Request"
+                ],
+                [
+                    "integer",
+                    1
+                ],
+                [
+                    "boolean",
+                    true
+                ]
+            ]
+        },
+        {
+            "namespace": "Symfony\\Component\\HttpKernel",
+            "short_class": "Kernel",
+            "class": "Symfony\\Component\\HttpKernel\\Kernel",
+            "type": "->",
+            "function": "handle",
+            "file": "/var/www/vendor/symfony/runtime/Runner/Symfony/HttpKernelRunner.php",
+            "line": 37,
+            "args": [
+                [
+                    "object",
+                    "Symfony\\Component\\HttpFoundation\\Request"
+                ]
+            ]
+        },
+        {
+            "namespace": "Symfony\\Component\\Runtime\\Runner\\Symfony",
+            "short_class": "HttpKernelRunner",
+            "class": "Symfony\\Component\\Runtime\\Runner\\Symfony\\HttpKernelRunner",
+            "type": "->",
+            "function": "run",
+            "file": "/var/www/vendor/autoload_runtime.php",
+            "line": 35,
+            "args": []
+        },
+        {
+            "namespace": "",
+            "short_class": "",
+            "class": "",
+            "type": "",
+            "function": "require_once",
+            "file": "/var/www/public/index.php",
+            "line": 5,
+            "args": [
+                [
+                    "string",
+                    "/var/www/vendor/autoload_runtime.php"
+                ]
+            ]
+        }
+    ],
+    "server_datetime": "2023-08-05T15:41:55+03:00",
+    "server_time": 1691239315,
+    "version": {
+        "ios": "0.0.1",
+        "android": "0.0.1"
+    }
+}
