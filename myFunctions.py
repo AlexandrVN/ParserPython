@@ -49,3 +49,8 @@ def get_category(url):
     # "0": {"translations": {"original": {"siteUrl": null}}}
 
     pass
+
+
+# список - list = [] ['a', 'b', ..., 'n']
+# кортеж - tuple = () ('a', 'b', ..., 'n')
+# словник - dict = {} {['name': 'Bob'], ['age': '12']}

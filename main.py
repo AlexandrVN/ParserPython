@@ -88,6 +88,7 @@ def main():
     page = 1
     item_end = 10
     item_description = {'name': [],
+                        'nameService': [],
                         'siteUrl': []}
     for i in range(7, pages[0]):
         url_page = (f"https://app.mybeauty.ua/api/v1/salon/nearest?perPage=10&page={page + i}&latitude=50.4501&longitude=30.5234&searchText=%D0%91%D0%B0%D1%80%D0%B1%D0%B5%D1%80%D1%88%D0%BE%D0%BF%D0%B8&address=%D0%9A%D0%B8%D1%97%D0%B2,%20Ukraine")
@@ -115,10 +116,10 @@ def main():
             # item_description.append(data.get(item))
 
             # print(type(data.get(item).get("translations").get("original").get("name")))
-
-
-
-        # print(url_page)
+            lst_service = []
+            for j in range(0, int(len(data[str(item)]['masterServiceDirections']))):
+                lst_service.append(data[str(item)]['masterServiceDirections'][j]['translations']['original']['name'])
+            item_description['nameService'].append(lst_service)
 
     print(item_description)
 
